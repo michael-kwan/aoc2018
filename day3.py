@@ -39,6 +39,9 @@ for i in range(len(mat)):
 		if mat[i][j] > 1:
 			part1 += 1
 
+with open('day3out.txt', 'wb') as f:
+    np.savetxt(f, mat, fmt='%d')
+
 print ("Part 1: "+str(part1))
 
 #star 6
@@ -54,6 +57,6 @@ for line in content:
 		for j in range(h0,hm):
 			if mat[i][j] > 1:
 				conflict = True
-	
+
 	if conflict == False:
-		print ("Part 2: " str(line[0]))
+		print ("Part 2: " + str(line[0]))
