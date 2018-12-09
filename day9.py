@@ -1,9 +1,10 @@
 from itertools import cycle
 import time
+import blist
 players = 477
 hiscore = 7085100
 
-marbles = [0,1]
+marbles = blist([0,1])
 index = 1
 current = 2
 scores = {}
